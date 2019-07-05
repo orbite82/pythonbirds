@@ -16,3 +16,11 @@ if __name__ == '__main__':
 #    luciano.nome = 'Orbite'
 #    print(luciano.nome)
     print(luciano.idade)
+    for filho in luciano.filhos:
+        print(filho.nome)
+    luciano.sobrenome = 'Ramalho'
+#    luciano.sobrenome
+#    print(luciano.sobrenome)
+    del luciano.filhos
+    print(luciano.__dict__)
+    print(orbitex.__dict__)
