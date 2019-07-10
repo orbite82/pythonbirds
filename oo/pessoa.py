@@ -25,6 +25,7 @@ if __name__ == '__main__':
 #    print(luciano.sobrenome)
     del luciano.filhos
     luciano.olhos = 1
+    del luciano.olhos
     print(luciano.__dict__)
     print(orbitex.__dict__)
     Pessoa.olhos = 3
