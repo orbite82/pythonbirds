@@ -27,6 +27,7 @@ if __name__ == '__main__':
     luciano.olhos = 1
     print(luciano.__dict__)
     print(orbitex.__dict__)
+    Pessoa.olhos = 3
     print(Pessoa.olhos)
     print(luciano.olhos)
     print(orbitex.olhos)
