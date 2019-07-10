@@ -8,6 +8,10 @@ class Pessoa:
 
     def cuprimentar(self):
         return f'Olá {id(self)}'
+
+    @staticmethod
+    def metodo_estatico():
+        return 42
 if __name__ == '__main__':
     orbitex = Pessoa(nome='Orbitex')
     luciano = Pessoa(orbitex, nome='Luciano')
@@ -34,6 +38,7 @@ if __name__ == '__main__':
     print(orbitex.olhos)
     print(id(Pessoa.olhos), id(luciano.olhos), id(orbitex.olhos))
     #criado classe de atributo olhos
+    print(Pessoa.metodo_estatico(), luciano.metodo_estatico())
 
 
 
