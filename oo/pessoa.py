@@ -33,6 +33,7 @@ if __name__ == '__main__':
     print(luciano.olhos)
     print(orbitex.olhos)
     print(id(Pessoa.olhos), id(luciano.olhos), id(orbitex.olhos))
+    #criado classe de atributo olhos
 
 
 
