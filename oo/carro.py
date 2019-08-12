@@ -96,3 +96,6 @@ class Motor:
 
     def acelerar(self):
         self.velocidade += 1
+
+    def frear(self):
+        self.velocidade -= 2
