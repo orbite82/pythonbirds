@@ -23,7 +23,8 @@ class Homen(Pessoa):
 if __name__ == '__main__':
     orbitex = Homen(nome='Orbitex')
     #orbitex = Pessoa(nome='Orbitex')
-    luciano = Pessoa(orbitex, nome='Luciano')
+    luciano = Homen(orbitex, nome='Luciano')
+    #luciano = Pessoa(orbitex, nome='Luciano')
     print(Pessoa.cuprimentar(luciano))
     print(id(luciano))
     print(luciano.cuprimentar())
