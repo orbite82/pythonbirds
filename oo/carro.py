@@ -100,6 +100,14 @@ class Carro:
         self.motor = motor
         self.direcao = direcao
 
+    def calcular_velocidade(self):
+        return self.motor.velocidade
+
+    def acelerar_velocidade(self):
+        return self.motor.velocidade()
+    def frear(self):
+        return self.motor.frear()
+
 class Direcao:
     rotacao_a_direita_dct = {
         NORTE: LESTE, LESTE: SUL, SUL: OESTE, OESTE: NORTE
