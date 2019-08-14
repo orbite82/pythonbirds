@@ -99,6 +99,14 @@ OESTE = 'Oeste'
 class Direcao:
     def __init__(self):
         self.valor = NORTE
+    def girar_a_direita(self):
+        if self.valor == NORTE:
+            self.valor = LESTE
+        elif self.valor == LESTE:
+           self.valor = SUL
+        elif self.valor == SUL:
+            self.valor = OESTE
+
 class Motor:
     def __init__(self):
         self.velocidade = 0
