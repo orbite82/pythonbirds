@@ -107,6 +107,10 @@ class Carro:
     def calcular_direcao(self):
         return self.direcao.valor
 
+    def girar_a_direita(self):
+        self.direcao.girar_a_direita()
+
+
 NORTE = 'Norte'
 SUL = 'Sul'
 LESTE = 'Leste'
@@ -121,6 +125,7 @@ class Direcao:
     rotacao_a_esquerda_dct = {
         NORTE: OESTE, LESTE: NORTE, SUL: LESTE, OESTE: SUL
     }
+
     def __init__(self):
         self.valor = NORTE
 
@@ -138,8 +143,10 @@ class Direcao:
 class Motor:
     def __init__(self):
         self.velocidade = 0
+
     def acelerar(self):
         self.velocidade += 1
+
     def frear(self):
         self.velocidade -= 2
         self.velocidade = max(0, self.velocidade)
