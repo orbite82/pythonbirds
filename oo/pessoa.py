@@ -52,6 +52,7 @@ if __name__ == '__main__':
     print(Pessoa.nome_e_atributos_de_classe(), luciano.nome_e_atributos_de_classe())
     pessoa = Pessoa('Anonimo')
     print(isinstance(pessoa, Pessoa))
+    print(isinstance(pessoa, Homen))
 
 
 
