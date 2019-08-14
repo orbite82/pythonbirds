@@ -17,8 +17,12 @@ class Pessoa:
     def nome_e_atributos_de_classe(cls):
         return f'{cls} - olhos {cls.olhos}'
 
+class Homen(Pessoa):
+    pass
+
 if __name__ == '__main__':
-    orbitex = Pessoa(nome='Orbitex')
+    orbitex = Homen(nome='Orbitex')
+    #orbitex = Pessoa(nome='Orbitex')
     luciano = Pessoa(orbitex, nome='Luciano')
     print(Pessoa.cuprimentar(luciano))
     print(id(luciano))
