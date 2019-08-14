@@ -53,6 +53,8 @@ if __name__ == '__main__':
     pessoa = Pessoa('Anonimo')
     print(isinstance(pessoa, Pessoa))
     print(isinstance(pessoa, Homen))
+    print(isinstance(orbitex, Pessoa))
+    print(isinstance(orbitex, Homen))
 
 
 
