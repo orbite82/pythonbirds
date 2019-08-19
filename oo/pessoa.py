@@ -20,8 +20,11 @@ class Pessoa:
 class Homen(Pessoa):
     pass
 
+class Mutante(Pessoa):
+    pass
+
 if __name__ == '__main__':
-    orbitex = Homen(nome='Orbitex')
+    orbitex = Mutante(nome='Orbitex')
     #orbitex = Pessoa(nome='Orbitex')
     luciano = Homen(orbitex, nome='Luciano')
     #luciano = Pessoa(orbitex, nome='Luciano')
@@ -42,7 +45,7 @@ if __name__ == '__main__':
     del luciano.olhos
     print(luciano.__dict__)
     print(orbitex.__dict__)
-    Pessoa.olhos = 3
+    #Pessoa.olhos = 3
     print(Pessoa.olhos)
     print(luciano.olhos)
     print(orbitex.olhos)
@@ -55,6 +58,9 @@ if __name__ == '__main__':
     print(isinstance(pessoa, Homen))
     print(isinstance(orbitex, Pessoa))
     print(isinstance(orbitex, Homen))
+    #inserindo este print com 3 olhos
+    print(orbitex.olhos)
+
 
 
 
