@@ -19,7 +19,8 @@ class Pessoa:
         return f'{cls} - olhos {cls.olhos}'
 
 class Homen(Pessoa):
-    pass
+    def cuprimentar(self):
+        return 'Aperto de mão'
 
 class Mutante(Pessoa):
     olhos = 3
