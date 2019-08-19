@@ -20,7 +20,8 @@ class Pessoa:
 
 class Homen(Pessoa):
     def cuprimentar(self):
-        return 'Aperto de mão'
+        cuprimentar_da_classe = Pessoa.cuprimentar(self)
+        return f'{cuprimentar_da_classe}. Aperto de mão'
 
 class Mutante(Pessoa):
     olhos = 3
