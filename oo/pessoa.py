@@ -7,7 +7,8 @@ class Pessoa:
         self.filhos = list(filhos)
 
     def cuprimentar(self):
-        return f'Olá {id(self)}'
+        #return f'Olá {id(self)}'
+        return f'Olá, meu nome é {self.nome}'
 
     @staticmethod
     def metodo_estatico():
