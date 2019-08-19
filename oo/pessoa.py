@@ -20,7 +20,7 @@ class Pessoa:
 
 class Homen(Pessoa):
     def cuprimentar(self):
-        cuprimentar_da_classe = Pessoa.cuprimentar(self)
+        cuprimentar_da_classe = super().cuprimentar()
         return f'{cuprimentar_da_classe}. Aperto de mão'
 
 class Mutante(Pessoa):
