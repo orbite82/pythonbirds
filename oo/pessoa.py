@@ -21,7 +21,7 @@ class Homen(Pessoa):
     pass
 
 class Mutante(Pessoa):
-    pass
+    olhos = 3
 
 if __name__ == '__main__':
     orbitex = Mutante(nome='Orbitex')
