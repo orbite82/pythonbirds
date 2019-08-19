@@ -60,6 +60,8 @@ if __name__ == '__main__':
     print(isinstance(orbitex, Homen))
     #inserindo este print com 3 olhos
     print(orbitex.olhos)
+    print(luciano.cuprimentar())
+    print(orbitex.cuprimentar())
 
 
 
